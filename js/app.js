@@ -13,7 +13,7 @@ const submitToNewsletter = event => {
 
     if(checkEmail(emailToCheck)) {
         emailInput.classList.remove('error')
-        errorMessage.textContent = "" 
+        errorMessage.textContent = ""
     }               
 }
 
