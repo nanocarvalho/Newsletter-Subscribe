@@ -1,0 +1,106 @@
+:root {
+    --accent-color: #F9BD26;
+    --white: #fff;
+    --light: #ebe5e1;
+    --dark: #1B1F22;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark);
+    font-family: 'Mulish', sans-serif;
+}
+
+h1 {
+    font-size: 1.4rem;
+    margin: 0.6rem 0;
+    text-align: center;
+}
+
+p {
+    margin: 0.6rem 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.main-container {
+    background-color: var(--white);
+    max-width: 95%;
+    padding: 1rem;
+    border-radius: 3px;
+}
+
+.image-container {
+    margin-top: 1rem;
+    max-width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+.form-style {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-style label {
+    font-size: 1rem;
+}
+
+.email-input_style {
+    margin-top: 0.5rem;
+    border: 0;
+    padding: 0.5rem;
+    background-color: var(--light);
+    outline-color: var(--accent-color);
+}
+
+.email-input_style.error {
+    border: 1px solid #f94626;
+}
+
+.error-message {
+    color: #f94626;
+    margin: 0.2rem;
+}
+
+.form-style button {
+    margin-top: 0.5rem;
+    border: 0;
+    padding: 0.5rem 0;
+    background-color: var(--accent-color);
+}
+
+.form-style button:hover {
+    background-color: #dd8e17;
+}
+
+@media (min-width: 550px) {
+    .main-container {
+        max-width: 70%;
+    }
+
+    .image-container img {
+        max-height: 80%;
+}
+
+}
+
+@media (min-width: 700px) {
+    .main-container {
+        max-width: 25rem;
+    }
+}
